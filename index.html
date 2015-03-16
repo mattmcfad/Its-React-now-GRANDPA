@@ -4,8 +4,7 @@
 		<meta charset="UTF-8">
 		<title>REACTJS FUN!</title>
 		<script src="./bower_components/react/react.js"></script>
-		<script src="./bower_components/rxjs/dist/rx.js"></script>
-		<script src="http://fb.me/JSXTransformer-0.13.0.js"></script>
+		<script src="./bower_components/react/JSXTransformer.js"></script>
 	</head>
 	<body>
 		<h1>Test</h1>
@@ -22,12 +21,11 @@
 				}
 			});
 			setInterval(function() {
-			  React.render(
-			    <HelloWorld date={new Date()} />,
-			    document.getElementById('hello')
-			  );
+				React.render(
+					<HelloWorld date={new Date()} />,
+					document.getElementById('hello')
+				);
 			}, 500);
 		</script>
 	</body>
-
 </html>
